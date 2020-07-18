@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SAKIFPhone</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a class="active" routerLink="/">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produits
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/products">Chercher</a></li>
+          <li><a routerLink="/new-product">Ajouter</a></li>
+
+        </ul>
+      </li>
+      <li><a class="active" routerLink="/products">Consulter les Produits</a></li>
+      <li><a class="active" routerLink="/new-product">Ajouter</a></li>
+      <li><a class="active" routerLink="/hello">bienvenue</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
