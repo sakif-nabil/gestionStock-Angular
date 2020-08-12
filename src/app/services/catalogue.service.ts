@@ -9,7 +9,8 @@ import {Observable} from "rxjs";
 })
 export class CatalogueService {
 
-public host:string="http://localhost:8080";
+public host:string="https://testmylife.herokuapp.com";
+  //"http://localhost:8080";
 
   constructor(private httpClient:HttpClient) { }
 
