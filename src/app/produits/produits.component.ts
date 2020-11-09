@@ -59,7 +59,7 @@ public currentKeyword:string="";
   onDeleteProduct(p) {
     let conf=confirm("Are you sure?");
     if(conf){
-      this.catService.deleteResource(p.id)
+      this.catService.deleteResource(p._links.self.href)
         .subscribe(data=> {
           this.chercherProduits();
         },err=>{
