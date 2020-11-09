@@ -18,6 +18,18 @@ public currentKeyword:string="";
   constructor(private catService:CatalogueService,private router:Router) { }
 
   ngOnInit(): void {
+
+      this.catService.getProducts(this.currentPage,this.size)
+        .subscribe(data=>{
+          this.produits=data;
+          this.totalpages=data["page"].totalPages;
+          this.pages= new Array<number>(this.totalpages);
+        },err=>{
+          console.log(err);
+        });
+
+
+
   }
 
   onGetproducts() {
