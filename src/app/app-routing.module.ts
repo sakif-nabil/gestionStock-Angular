@@ -15,7 +15,7 @@ const routes: Routes = [
     path:"new-product",component:NewProductComponent
   },
   {
-    path:"", redirectTo:"/accueil",pathMatch:'full'
+    path:"", redirectTo:"/products",pathMatch:'full'
   },
   {
     path:"edit-product/:id",component:EditProductComponent
